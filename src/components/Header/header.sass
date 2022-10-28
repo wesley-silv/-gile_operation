@@ -1,0 +1,32 @@
+.header
+  height: 100px
+  box-shadow: 5px 5px 5px gray
+  padding: .5em
+  display: flex
+  justify-content: space-between
+  align-items: center
+  a
+
+    img
+      height: 100px
+      border-radius: 20px
+      opacity: .8
+      &:hover
+        animation: logoRotate 2s
+  .menu
+    &:hover
+      cursor: pointer
+      animation: menuRotate 1500ms
+
+@keyframes logoRotate 
+ from
+  transform: rotatey(0)  
+ to
+  transform: rotatey(360deg)
+
+@keyframes menuRotate 
+  from
+    transform: rotatey(0)  
+  to
+    transform: rotatey(360deg)
+
