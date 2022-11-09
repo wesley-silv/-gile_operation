@@ -2,7 +2,6 @@
 import './header.sass';
 
 // Icons
-import { CgMenuLeftAlt } from 'react-icons/all'
 
 const Header = () => {
   const Imagens = { 
@@ -11,10 +10,20 @@ const Header = () => {
 
   return (
     <div className='header'>
-      <a href='#' alt='logo inicial da página' >
+      <a href='../index.html' target="black" title='Início' alt='logo inicial da página' className='header-img'>
         <img src={Imagens.logo} alt='McCain' />
+        + tpm
       </a>
-      <CgMenuLeftAlt size={50} color='gray' className='menu'/>
+      <ul className='header-list'>
+        <li><a href="">Ishida</a></li>
+        <li><a href="">Hysen</a></li>
+        <li><a href="">Detector</a></li>
+        <li><a href="">Balança</a></li>
+        <li><a href="">Encaixotadora</a></li>
+        <li><a href="">Seladora</a></li>
+        <li><a href="">Armadora</a></li>
+        <li><a href="">Robô</a></li>
+      </ul>
     </div>
   )
 }

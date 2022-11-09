@@ -1,22 +1,40 @@
 .header
   height: 100px
-  box-shadow: 5px 5px 5px gray
-  padding: .5em
+  box-shadow: 5px 7px 5px gray
+  padding: .5em 1em
   display: flex
   justify-content: space-between
   align-items: center
-  a
-
+  .header-img
+    display: flex
+    justify-content: center
+    align-items: center
+    text-decoration: none
+    color: navy
+    font-size: 24px
+    text-transform: uppercase
+    font-weight: bold
     img
       height: 100px
       border-radius: 20px
       opacity: .8
       &:hover
         animation: logoRotate 2s
-  .menu
-    &:hover
-      cursor: pointer
-      animation: menuRotate 1500ms
+  .header-list
+    display: flex
+    flex-wrap: wrap
+
+    li
+      list-style-type: none
+      a
+        text-transform: uppercase
+        text-decoration: none
+        margin: .5em
+        line-height: 25px
+        font-size: 18px
+        &:hover
+          border-bottom: solid 2.5px
+
 
 @keyframes logoRotate 
  from
